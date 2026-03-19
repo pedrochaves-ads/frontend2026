@@ -1,7 +1,7 @@
 :root {
   --primary-color: #2c3e50;
   --bg-color: #f4f7f6;
-  --card-bg: #ffffff;
+  --card-bg: #fff; 
 }
 
 * { 
@@ -15,7 +15,6 @@ body {
   background-color: var(--bg-color); 
 }
 
-/* MOBILE-FIRST: Empilha tudo por padrão */
 .app-container { 
   display: flex; 
   flex-direction: column; 
@@ -27,9 +26,8 @@ body {
   padding: 20px; 
 }
 
-/* Ajuste para o logo que mudou de div para strong */
 .logo { 
-  display: block; /* Garante que ele ocupe a linha toda como a div fazia */
+  display: block;
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 20px; 
@@ -37,7 +35,7 @@ body {
 
 .dashboard-grid {
   display: grid;
-  grid-template-columns: 1fr; /* Uma coluna no celular */
+  grid-template-columns: 1fr;
   gap: 20px;
   padding: 20px;
 }
@@ -46,11 +44,11 @@ body {
   background: var(--card-bg); 
   padding: 15px; 
   border-radius: 8px; 
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+  box-shadow: 0 2px 5px rgb(0 0 0 / 10%); 
 }
 
-/* DESKTOP: Lado a lado quando a tela for grande */
-@media (min-width: 768px) {
+
+@media (width >= 768px) {
   .app-container { 
     flex-direction: row; 
     min-height: 100vh; 
@@ -65,6 +63,6 @@ body {
   }
   
   .dashboard-grid {
-    grid-template-columns: repeat(2, 1fr); /* Duas colunas no desktop */
+    grid-template-columns: repeat(2, 1fr);
   }
 }
