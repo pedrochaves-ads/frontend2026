@@ -1,12 +1,55 @@
-<!doctype html>
-<html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aluno Online - Dashboard</title>
+    <link rel="stylesheet" href="./src/style.css">
     <link rel="icon" type="image/svg+xml" href="/javascript.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aluno Online</title>
-  </head>
-  <body>
+</head>
+<body>
+    <aside class="sidebar">
+        <strong class="logo">Aluno Online</strong>
+        <nav>
+            <ul>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Disciplinas</a></li>
+                <li><a href="#">Calendário</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main class="main-content">
+        <header class="top-bar">
+            <h1>Olá, Pedro Chaves!</h1>
+            <p>Bem-vindo ao portal do aluno</p>
+        </header>
+
+        <section class="dashboard-grid">
+            <article class="card">
+                <h2>Mural de Avisos</h2>
+                <ul>
+                    <li>Inscrição para projeto de extensão</li>
+                    <li>Eleição para representante de turma</li>
+                </ul>
+            </article>
+
+            <article class="card">
+                <h2>Calendário Acadêmico</h2>
+                <p>23/02 - Início do período letivo</p>
+                <p>25/04 - Prazo final de trancamento</p>
+            </article>
+
+            <article class="card">
+                <h2>Minhas Disciplinas</h2>
+                <ul>
+                    <li>Desenvolvimento Web Front-end</li>
+                    <li>Algoritmos</li>
+                </ul>
+            </article>
+        </section>
+    </main>
+
     <script type="module" src="/src/main.js"></script>
-  </body>
+</body>
 </html>
