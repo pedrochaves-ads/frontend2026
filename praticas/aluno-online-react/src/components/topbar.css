@@ -1,0 +1,26 @@
+.topbar-container {
+  background-color: #1a202c;
+  color: white;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.topbar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px 40px;
+}
+
+.topbar-container h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.user-icon {
+  font-size: 28px;
+  cursor: pointer;
+}

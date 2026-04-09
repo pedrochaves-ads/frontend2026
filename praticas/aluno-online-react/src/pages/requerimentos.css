@@ -1,0 +1,75 @@
+.layout-app {
+  display: flex;
+  min-height: 100vh;
+}
+
+.conteudo-principal {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.miolo-pagina {
+  padding: 40px;
+  flex: 1;
+}
+
+.miolo-pagina h1 {
+  font-size: 32px;
+  margin: 0 0 10px 0;
+  color: #1a202c;
+}
+
+.subtitulo {
+  color: #666;
+  margin: 0 0 30px 0;
+  font-size: 16px;
+}
+
+.requerimentos-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.requerimentos-table thead {
+  background-color: #f9f9f9;
+}
+
+.requerimentos-table th {
+  padding: 12px 15px;
+  text-align: left;
+  font-weight: 600;
+  color: #333;
+  border-bottom: 2px solid #e0e0e0;
+  font-size: 14px;
+}
+
+.requerimentos-table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #e0e0e0;
+  color: #555;
+  font-size: 14px;
+}
+
+.requerimentos-table tbody tr:hover {
+  background-color: #f9f9f9;
+}
+
+.requerimentos-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.indeferido {
+  color: #dc3545;
+  font-weight: 600;
+}
+
+.deferido {
+  color: #28a745;
+  font-weight: 600;
+}
+

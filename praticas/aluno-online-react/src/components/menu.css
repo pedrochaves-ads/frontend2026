@@ -1,0 +1,44 @@
+.menu-nav {
+  width: 200px;
+}
+
+.menu-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-nav li {
+  padding: 12px 0;
+  cursor: pointer;
+  color: #333;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  border-left: 3px solid transparent;
+  padding-left: 10px;
+  user-select: none;
+}
+
+.menu-nav li:hover {
+  background-color: #e8e8e8;
+  border-left-color: #1a202c;
+  padding-left: 15px;
+}
+
+.menu-nav li:active {
+  background-color: #ddd;
+}
+
+.menu-nav li.sair {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #ddd;
+  color: #d9534f;
+  font-weight: 600;
+  border-left: none;
+}
+
+.menu-nav li.sair:hover {
+  background-color: #f0e8e8;
+  border-left-color: #d9534f;
+}

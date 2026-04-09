@@ -1,0 +1,80 @@
+.layout-app {
+  display: flex;
+  min-height: 100vh;
+}
+
+.conteudo-principal {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.miolo-pagina {
+  padding: 40px;
+  flex: 1;
+}
+
+.miolo-pagina h1 {
+  font-size: 32px;
+  margin: 0 0 10px 0;
+  color: #1a202c;
+}
+
+.subtitulo {
+  color: #666;
+  margin: 0 0 30px 0;
+  font-size: 16px;
+}
+
+.boletos-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.boletos-table thead {
+  background-color: #f9f9f9;
+}
+
+.boletos-table th {
+  padding: 12px 15px;
+  text-align: left;
+  font-weight: 600;
+  color: #333;
+  border-bottom: 2px solid #e0e0e0;
+  font-size: 14px;
+}
+
+.boletos-table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #e0e0e0;
+  color: #555;
+  font-size: 14px;
+}
+
+.boletos-table tbody tr:hover {
+  background-color: #f9f9f9;
+}
+
+.boletos-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.pago {
+  color: #28a745;
+  font-weight: 600;
+}
+
+.atraso {
+  color: #dc3545;
+  font-weight: 600;
+}
+
+.apagar {
+  color: #ff9800;
+  font-weight: 600;
+}
+

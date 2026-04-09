@@ -1,0 +1,33 @@
+.sidebar-container {
+  background-color: #f4f4f4;
+  width: 250px;
+  min-height: 100vh;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #ddd;
+}
+
+.sidebar-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo-icon {
+  font-size: 24px;
+}
+
+.sidebar-logo h2 {
+  margin: 0;
+  font-size: 18px;
+  color: #1a202c;
+  font-weight: 600;
+}
+
+.sidebar-container nav {
+  padding: 20px;
+  flex: 1;
+}
