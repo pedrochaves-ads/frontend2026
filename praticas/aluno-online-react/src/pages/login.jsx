@@ -9,34 +9,35 @@ function Login() {
           <h1>Aluno Online</h1>
         </header>
 
-        <form className="login-form">
+        <form className="login-form" action="?page=dashboard">
           <fieldset className="form-group">
-            <label htmlFor="email">Email</label>
+            <label>E-mail</label>
             <input
               type="email"
               id="email"
-              placeholder="seu.email@email.com"
+              name="email"
+              placeholder="Digite seu email"
+              required
             />
           </fieldset>
 
           <fieldset className="form-group">
-            <label htmlFor="password">Senha</label>
+            <label>Senha</label>
             <input
               type="password"
-              id="password"
+              id="senha"
+              name="senha"
               placeholder="Digite sua senha"
+              required
             />
           </fieldset>
 
           <button type="submit" className="login-button">
             Entrar
           </button>
-
-          <footer className="login-footer">
-            <a href="#forgot">Esqueceu a senha?</a>
-          </footer>
         </form>
       </section>
+      <footer className="login-footer-text">© 2026. Todos os direitos reservados.</footer>
     </main>
   );
 }

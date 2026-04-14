@@ -1,5 +1,7 @@
 .menu-nav {
-  width: 200px;
+  width: 100%;
+  min-height: calc(100vh - 0px);
+  padding: 24px 20px;
 }
 
 .menu-nav ul {
@@ -9,7 +11,7 @@
 }
 
 .menu-nav li {
-  padding: 12px 0;
+  padding: 14px 16px;
   cursor: pointer;
   color: #333;
   font-size: 14px;
@@ -17,6 +19,17 @@
   border-left: 3px solid transparent;
   padding-left: 10px;
   user-select: none;
+}
+.menu-nav li.active {
+  background-color: #eef2f7;
+  border-left-color: #1a202c;
+}
+
+.menu-nav li a {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  width: 100%;
 }
 
 .menu-nav li:hover {

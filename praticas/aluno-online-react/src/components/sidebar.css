@@ -28,6 +28,10 @@
 }
 
 .sidebar-container nav {
+  padding: 24px 20px;
+}
+
+.sidebar-container nav {
   padding: 20px;
   flex: 1;
 }
