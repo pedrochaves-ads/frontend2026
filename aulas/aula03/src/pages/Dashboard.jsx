@@ -1,23 +1,15 @@
 import Card from "../components/Card";
-import Sidebar from "../components/Sidebar";
-import Topbar from "../components/Topbar";
+import Layout from "./Layout"; 
 
 
 function Dashboard() {
   return (
-    <>
-      <Sidebar />
-      <main>
-        <Topbar titulo="Olá Aluno" />
-        <h2>Bem-vindo ao portal do aluno</h2>
-        <section>
+      <Layout titulo="Olá Aluno" subtitulo="Bem-vindo ao portal do aluno">
           <Card titulo="Mural de Avisos" />
           <Card titulo="Calendário Acadêmico" />
           <Card titulo="Minhas Disciplinas" />
-        </section>
-      </main>
-    </>
-  );
+      </Layout>
+  )
 }
 
 export default Dashboard;

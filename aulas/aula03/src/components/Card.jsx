@@ -1,7 +1,7 @@
 function Card() {
   return (
     <section>
-      <h3>Mural de Avisos</h3>
+      <h3>{props.titulo}</h3>
       <ul>
         <li>Eleição para representante</li>
         <li></li>
