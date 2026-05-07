@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Aluno Online</title>
+    <link rel="stylesheet" href="/src/style.css">
+</head>
+<body class="login-page">
+
+    <main class="login-container">
+        <img src="/learn.svg" alt="Logotipo da aplicação" width="150">
+        
+        <h1>Aluno Online</h1>
+
+        <form id="loginForm">
+            <div class="input-group">
+                <label for="matricula">Matrícula</label>
+                <input type="number" id="matricula" name="matricula" placeholder="Digite sua matrícula">
+                <p id="matriculaErro" class="error-text"></p>
+            </div>
+
+            <div class="input-group">
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" name="senha" placeholder="Digite sua senha">
+                <p id="senhaErro" class="error-text"></p>
+            </div>
+
+            <button type="submit" id="btn-login">Entrar</button>
+        </form>
+    </main>
+
+    <script type="module" src="src/main.js"></script>
+</body>
+</html>

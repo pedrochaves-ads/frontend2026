@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aluno Online - Dashboard</title>
-    <link rel="stylesheet" href="./src/style.css">
-    <link rel="icon" type="image/svg+xml" href="/javascript.svg" />
+    <link rel="stylesheet" href="/src/style.css">
+    <link rel="icon" type="image/svg+xml" href="/learn.svg" />
 </head>
-<body>
+<body class="dashboard-page">
     <aside class="sidebar">
-        <strong class="logo">Aluno Online</strong>
+        <strong class="logo">
+            <img src="/learn.svg" alt="Ícone"> Aluno Online
+        </strong>
         <nav>
             <ul>
                 <li><a href="#">Dashboard</a></li>
@@ -21,8 +23,13 @@
 
     <main class="main-content">
         <header class="top-bar">
-            <h1>Olá, Pedro Chaves!</h1>
-            <p>Bem-vindo ao portal do aluno</p>
+            <section class="user-welcome">
+                <h1>Olá, Pedro Chaves!</h1>
+                <p>Bem-vindo ao portal do aluno</p>
+            </section>
+            <a href="login.html" id="perfilBtn" class="profile-icon">
+                <img src="/avatar.svg" alt="Perfil">
+            </a>
         </header>
 
         <section class="dashboard-grid">
@@ -36,15 +43,19 @@
 
             <article class="card">
                 <h2>Calendário Acadêmico</h2>
-                <p>23/02 - Início do período letivo</p>
-                <p>25/04 - Prazo final de trancamento</p>
+                    <ul>
+                        <li>23/02 - Início do período letivo</li>
+                        <li>25/04 - Prazo final de trancamento</li>
+                    </ul>
             </article>
 
             <article class="card">
                 <h2>Minhas Disciplinas</h2>
                 <ul>
-                    <li>Desenvolvimento Web Front-end</li>
-                    <li>Algoritmos</li>
+                    <li>Manutenção de Software</li>
+                    <li>Front End</li>
+                    <li>Governança de TI</li>
+                    <li>Business Intelligence</li>
                 </ul>
             </article>
         </section>
